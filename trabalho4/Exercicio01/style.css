@@ -1,0 +1,64 @@
+/* Regras 3 e 4: Configuração do Body */
+body {
+    background-color: #ddd;     /* Fundo cinza  */
+    font-family: Helvetica, sans-serif; /* Fonte Helvetica */
+    color: #444;                /* Cor do texto #444  */
+    line-height: 1.5;           /* Espaçamento entre linhas 1.5 */
+    width: 60%;                 /* Largura de 60%  */
+    margin: 0 auto;             /* Centralizado horizontalmente  */
+    padding: 2% 0;              /* Padding vertical  */
+}
+
+/* Regra 5: Configuração do Main */
+main {
+    background-color: white;    /* Fundo branco  */
+    padding: 40px;              /* Espaçamento interno (estético, baseado na imagem) */
+}
+
+/* Centralização da imagem e nome (Baseado na Figura 1) */
+.cabecalho {
+    text-align: center;
+}
+
+/* Regra 6: Cores dos títulos H1 e H2 */
+h1, h2 {
+    color: rgb(140, 76, 8);     /* Cor RGB específica  */
+}
+
+/* Regra 10: Bordas nas seções (substituindo o <hr>) */
+section {
+    margin-top: 0px;            
+    padding-bottom: 5px;        
+    border-top: solid 1px gray; /* Borda superior cinza  */
+}
+
+/* Regra 7: Recuo de 1ª linha no primeiro parágrafo após o título */
+/* O seletor "h2 + p" pega apenas o parágrafo imediatamente após o h2 */
+h2 + p {
+    text-indent: 2rem;          /* Recuo de 2rem  */
+}
+
+/* Regra 8: Itens de lista da Experiência Profissional em negrito */
+.experiencia li {
+    font-weight: bold;          
+}
+
+/* Regra 9: Estilo dos links com pseudo-classes */
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse */
+    color: darkblue;            /* Mudança de cor recomendada  */
+}
+
+a:visited {
+    color: purple;              /* Cor para links visitados  */
+}
+
+/* Ajuste extra para imagens de contato ficarem alinhadas ao texto */
+address img {
+    vertical-align: middle;
+}

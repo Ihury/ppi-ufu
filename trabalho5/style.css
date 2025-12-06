@@ -1,0 +1,139 @@
+/* Reset básico para remover margens padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Importante para o formulário de login [cite: 52] */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e0e0e0; /* Fundo cinza para destacar o main branco */
+}
+
+/* --- Cabeçalho e Navegação --- */
+header {
+    background-color: #555;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+nav {
+    background-color: #666;
+    width: 100%; /* [cite: 27] */
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline-block; /* Menu horizontal sem Flexbox */
+    margin: 0 15px;
+}
+
+nav ul li a, nav ul li strong {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* --- Estilos da Home (index.html) --- */
+/* O seletor abaixo garante que só afete a main da home e login se usar a mesma classe */
+main.container-home {
+    background-color: white;
+    width: 70%; /* [cite: 26] */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    padding: 20px;
+    border-radius: 5px; /* Estética similar à imagem */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* --- Rodapé --- */
+footer {
+    background-color: #555;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    clear: both;
+    margin-top: 20px;
+}
+
+footer address {
+    font-style: normal;
+}
+
+/* --- Estilos da Página de Login (login.html) --- */
+/* Instruções específicas para centralização vertical e horizontal sem Flexbox [cite: 49] */
+main.container-login {
+    background-color: white;
+    max-width: 300px; /* [cite: 49] */
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc; /* [cite: 50] */
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2); /* [cite: 50] */
+    
+    /* Truque para centralizar vertical e horizontalmente sem Flexbox */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%; /* [cite: 51] */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Campo em foco com sombra cinza [cite: 53] */
+.form-group input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #888;
+}
+
+button.btn-entrar {
+    width: 100%; /* [cite: 51] */
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.btn-entrar:hover {
+    background-color: #ddd;
+}

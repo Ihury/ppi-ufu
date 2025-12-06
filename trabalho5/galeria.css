@@ -1,0 +1,75 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+    background-color: #eee; /* Fundo da página fora do conteúdo */
+}
+
+/* Regra específica pedida no PDF: body com 70% de largura  */
+body {
+    width: 70%;
+    margin: 0 auto; /* Centraliza o body */
+    background-color: white;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Estética leve */
+    min-height: 100vh;
+}
+
+header {
+    background-color: #555;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+nav {
+    background-color: #666;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a, nav ul li strong {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center; /* Centraliza conteúdo interno */
+}
+
+/* Estilização das Imagens conforme imagem do PDF (arredondadas e sombra) [cite: 33] */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px; /* Espaço entre as células */
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+img {
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.4); /* Sombra projetada */
+    display: block; /* Remove espaço extra abaixo da imagem */
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #555;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
