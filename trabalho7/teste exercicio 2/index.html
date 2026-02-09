@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Eventos - Slide 33</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        input, button { padding: 8px; margin-right: 5px; }
+        p { margin-top: 20px; font-weight: bold; color: darkblue; }
+    </style>
+</head>
+<body>
+
+    <h2>Tratando Eventos</h2>
+
+    <input type="text" id="inputNome" name="nome" placeholder="Digite seu nome">
+    <button type="button" id="btnAcao">Clique aqui</button>
+
+    <p id="mensagemSaida"></p>
+
+    <div class="instrucao">
+        <h3>Evidência de Depuração:</h3>
+        <img src="print1.png" alt="Evidência de Depuração" style="max-width: 100%; border: 1px solid #ccc; padding: 5px; border-radius: 4px;">
+        </div>
+
+    <script>
+        const botao = document.querySelector("#btnAcao");
+
+        botao.onclick = function () {
+            const campoNome = document.querySelector("#inputNome");
+            const parSaida = document.querySelector("#mensagemSaida");
+            
+            parSaida.textContent = 'Obrigado, ' + campoNome.value;
+
+            console.log("Nome digitado:", campoNome.value);
+        };
+    </script>
+
+</body>
+</html>
