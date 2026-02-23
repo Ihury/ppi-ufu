@@ -1,0 +1,47 @@
+body {
+    background-color: #efefef;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 70%;
+    margin: 30px auto;
+    background-color: #fff;
+    border: 1px solid #c6c6c6;
+    padding: 25px;
+}
+
+h1 {
+    margin-bottom: 18px;
+}
+
+.campo {
+    margin-bottom: 12px;
+}
+
+label {
+    display: inline-block;
+    width: 170px;
+}
+
+input {
+    width: 260px;
+    padding: 6px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 14px;
+}
+
+.erro {
+    color: #b40000;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+#mensagem-sucesso {
+    color: #0b6b1f;
+    margin-top: 16px;
+}
